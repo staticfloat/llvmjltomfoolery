@@ -14,7 +14,7 @@
 
 * `clang`-generated `.so` file that gets `ccall`'ed into
 
-A docker container is provided that has all of this embedded within it, just run `make pull` within this directory to download a prebuilt version of Julia with LLVM.jl prebuilt and ready to go.  Running `make run` will launch the comparison script, run the benchmarks, then launch into an interactive Julia session, allowing you to inspect the benchmark results (available in `results`):
+A docker container is provided that has all of this embedded within it, just run `make pull` within this directory to download a prebuilt version of Julia with LLVM.jl prebuilt and ready to go (Warning, it's >6GB).  Running `make run` will launch the comparison script, run the benchmarks, then launch into an interactive Julia session, allowing you to inspect the benchmark results (available in `results`).  You can also just use `julia -i libtest.jl` within the `src/` directory to get the same effect, if you have your own environment setup properly.
 
 ```julia
 julia> results
